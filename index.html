@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arquivo de teste</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #111;
+        }
+
+        .card {
+            padding: 2rem;
+            margin: 2rem;
+            width: 20%;
+            border: 1px lightgray;
+            background: #ddd;
+            border-radius: 20%;
+            text-align: center;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            justify-items: center;
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="content">
+    <div class="card">
+        <p class="covid_api_ce_casos_confirmados"></p>
+        <p>Casos Confirmados</p>
+    </div>
+    <div class="card">
+        <p class="covid_api_ce_casos_internados"></p>
+        <p>Casos Internados</p>
+        <p><span class="covid_api_ce_casos_internados_percent_total">11,5%</span>  do total</p>
+    </div>
+    <div class="card">
+        <p class="covid_api_ce_casos_internados_uti"></p>
+        <p>Internados em UTI</p>
+        <p><span class="covid_api_ce_casos_internados_uti_percent_total">41,2%</span> dos internados</p>
+    </div>
+    <div class="card">
+        <p class="covid_api_ce_casos_internados_domiciliar"></p>
+        <p>Isolamento Domiciliar</p>
+        <p><span class="covid_api_ce_casos_internados_domiciliar_percent_total">41,2%</span> dos confirmados</p>
+    </div>
+    <div class="card">
+        <p class="covid_api_ce_casos_obitos"></p>
+        <p>ÓBITOS</p>
+        <p><span class="covid_api_ce_casos_obitos_percent_total">41,2%</span> do total</p>
+    </div>
+    <div class="card">
+        <p class="covid_api_ce_casos_recuperados"></p>
+        <p>ÓBITOS</p>
+        <p><span class="covid_api_ce_casos_recuperados_percent_total">41,2%</span> do total</p>
+    </div>
+    <div class="card">
+        <p class="covid_api_ce_casos_recuperados"></p>
+        <p>Variação no Número de Casos</p>
+        <p>Nas Últimas 24 horas</p>
+    </div>
+</div>
+<script src="codiv_api.js" data-uf="ce"></script>
+</body>
+</html>
